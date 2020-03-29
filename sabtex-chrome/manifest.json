@@ -1,0 +1,32 @@
+{
+    "name": "Sabtex",
+    "version": "0.1",
+    "manifest_version": 2,
+    "description": "Simple Apertium-Based Translation EXtension",
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [{
+        "matches": ["<all_urls>"],
+        "js": [
+            "apertium.js",
+            "jquery.js",
+            "jquery.poshytip.min.js",
+            "sabtex.js"
+        ],
+        "run_at": "document_end",
+        "all_frames": true
+    }],
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "web_accessible_resources": [
+        "poshytip/src/tip-skyblue/tip-skyblue.css",
+        "poshytip/src/tip-skyblue/tip-skyblue.png",
+        "poshytip/src/tip-skyblue/tip-skyblue_arrows.png"
+    ],
+    "permissions": ["http://api.apertium.org/"],
+    "options_page": "options.html"
+}
+

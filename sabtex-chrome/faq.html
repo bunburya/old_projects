@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>Sabtex Frequently Asked Question</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <h1>Sabtex FAQ</h1>
+        <p>
+        <h2>How does Sabtex work?</h2>
+        Sabtex works by detecting when you hover your mouse over a word or a highlighted piece
+        of text, and querying the Apertium web service for the appropriate translation. When
+        the translation is received it appears in a small non-intrusive popup box next to the
+        text.
+        </p>
+        <p>
+        <h2>What is Apertium?</h2>
+        Apertium is an open-source translation platform. More information can be found
+        <a href="http://www.apertium.org/?id=whatisapertium&lang=en">here</a>.
+        </p>
+        <p>
+        <h2>How do I configure Sabtex?</h2>
+        You configure Sabtex by specifying a list of rules to govern its behaviour. A rule
+        is a regular expression designed to capture a certain class of URLs, and an associated
+        language pair (the languages to translate to and from). The rules can be changed on the
+        options page. If a URL matches multiple rules, the one highest on the list will be used.
+        For example, the regular expression <code>^http(s?):\/\/[^\s\/]+\.es(\/[\S])?</code> will
+        match any URL where the domain name ends in ".es".
+        </p>
+        <p>
+        If you don't want to use regular expressions to set different rules for different forms
+        of URL, then simply add one rule, leaving the "URL" field blank, and set your desired
+        source and target languages. Leaving the "URL" field blank makes that rule apply to
+        all websites.
+        </p>
+        <p>
+        <h2>Sabtex isn't translating this text properly.</h2>
+        Sabtex itself doesn't handle any of the translation business; that is handled by Apertium,
+        which is developed separately. Machine translation of natural languages is a difficult
+        thing to do, and although Apertium is improving all the time it is inevitable that you
+        will get many imperfect translations. Often if Sabtex provides a translation you know to
+        be wrong, it can help to highlight the surrounding text and translate that as a whole,
+        as the surrounding words may give Apertium a clue as to the context and correct
+        translation of the word you're looking for.
+        </p>
+        <p>
+        <h2>Which languages are supported?</h2>
+        When you try to select a source language on the options page, the target language dropdown
+        box will only display languages to which Apertium can translate from that language.
+        </p>
+        <p>
+        Sabtex should support the same languages that are supported by the web interface to Apertium,
+        which can be accessed <a href="http://www.apertium.org/">here</a>.
+        </p>
+        <p>
+        <h2>Sabtex has messed up the look of a webpage.</h2>
+        Sabtex works by manipulating the HTML of a webpage. Unfortunately, this will occasionally
+        interfere with the look or behaviour of a webpage in ways that weren't intended and aren't
+        desirable. Where you want to reverse the effects of Sabtex on a webpage, currently the only
+        way to do this is to turn Sabtex off and refresh the webpage.
+        </p>
+    </body>
+</html>
+

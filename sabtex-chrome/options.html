@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>Sabtex Options</title>
+        <link rel="stylesheet" type="text/css" href="/style.css">
+    </head>
+    <script src="jquery.js"></script>
+    <script src="apertium.js"></script>
+    <script src="options.js"></script>
+
+    <body>
+        <form name="sabtex_options">
+            <table class="maintable">
+				<td>
+					<table class="subtable" id="on_off_table">
+						<tr>
+							<th colspan="4">Turn Sabtex on/off</th>
+						</tr>
+						<tr>
+							<td colspan="4">
+								<input type="checkbox" id="on_off_checkbox">
+								Turn Sabtex on/off
+							</td>
+						</tr>
+					</table>
+					<table class="subtable" id="rules_table">
+						<tr>
+							<th colspan="4">Language pair rules</th>
+						</tr>
+						<tr>
+							<th>URL regex</th>
+							<th>Source language</th>
+							<th>Target language</th>
+						</tr>
+					</table>
+					<table class="subtable" id="wait_time_table">
+						<tr>
+							<th colspan="4">Time before translation appears</th>
+						</tr>
+						<tr>
+							<td colspan="4">
+								Translate text after I have hovered over it for
+								<input type="text" id="wait_time_field">
+								milliseconds.
+							</td>
+						</tr>
+					</table>
+				</td>
+            </table>
+            <button type="submit">Save options</button>
+        </form>
+    </body>
+</html>
+

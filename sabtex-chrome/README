@@ -1,0 +1,9 @@
+Sabtex is a Simple Apertium-Based Translation EXtension.
+
+The aim is to provide a convenient interface for translating specific words
+or pieces of text on a web page using the Apertium web service.
+
+This is the version for Google Chrome and Chromium. There are also plans to
+develop a version for Firefox.
+
+It is still a work in progress and will be packaged soon.
